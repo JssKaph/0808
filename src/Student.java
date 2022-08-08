@@ -8,7 +8,7 @@ public class Student {  // 클래스
 	public Student() { // 기본 생성자 Default Constructor
 	}
 
-	public Student(String name, String hakbun, int kor, int eng, int mat, int edp) { // 생성자 이름이 같고, 파라미터가 다르고, 리턴타입이 없다. 오버로딩
+	public Student(String hakbun, String name, int kor, int eng, int mat, int edp) { // 생성자 이름이 같고, 파라미터가 다르고, 리턴타입이 없다. 오버로딩
 		this.name = name;
 		this.hakbun = hakbun;
 		this.kor = kor;
@@ -96,8 +96,4 @@ public class Student {  // 클래스
 		return String.format("%-10s%10s%5d%5d%5d%5d\t\t%5d%8.2f%5c",
 				name, hakbun, kor, eng, mat, edp, tot, avg, grade);
 	}
-	
-	
-	
-
 }
